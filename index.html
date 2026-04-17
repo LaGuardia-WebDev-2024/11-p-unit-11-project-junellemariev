@@ -2,7 +2,7 @@
 Requirements
 [  ] $() Select by Element, ID AND Class 
 [  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
+[ yes ] Add Five CSS Declarations
 [  ] Include Three Images
 
 Select ONE Additional 
@@ -23,56 +23,34 @@ Select ONE Additional
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <style>
-    body {
-      background-image: url(blue\ planets\ edited.jpg);
-       background-repeat: repeat;
-       background-size: auto;
-    }
-
-    p {
-      font-family: "Fuzzy Bubbles", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-    }
-
-    h3 {
-      font-family: "Rubik Bubbles", system-ui;
-      font-weight: 100;
-      font-style: normal;
-      font-size: 30px;
-    }
-
-    #pootycolor {
-      color: rgb(238,133,77);
-      font-family: "Rubik Bubbles", system-ui;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 50px;
-    }
-  </style>
   <body>
 
     <h1>My Top 3 Favorite Things About <span id="pootycolor">Pooty</span></h1>
-    <ol>
+    <ul>
       <li>
-        <h3 id="mem1">Thing #1</h3>
-        <p>More about this memory.</p>
-        <button id="mem1-button">Learn more...</button>
+        <div class="text-bg">
+           <h3 id="mem1">Thing #1</h3>
+           <p class="eyes">they're too cute to say no to</p>
+        </div>
+           <button id="mem1-button">Learn more...</button>
       </li>
 
       <li>
-        <h3 id="mem2">Thing #2</h3>
-        <p>More about this memory.</p>
-        <button id="mem2-button">Learn more...</button>
+        <div class="text-bg">
+           <h3 id="mem2">Thing #2</h3>
+           <p class="fur">it makes him super soft</p>
+        </div>
+           <button id="mem2-button">Learn more...</button>
       </li>
 
       <li>
-        <h3 id="mem3">Thing #3</h3>
-        <p>More about this memory</p>
-        <button id="mem3-button">Learn more...</button>
+        <div class="text-bg">
+            <h3 id="mem3">Thing #3</h3>
+            <p class="booty">it adds to his rotund-ness</p>
+        </div>
+            <button id="mem3-button">Learn more...</button>
       </li>
-    </ol>
+    </ul>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -80,17 +58,19 @@ Select ONE Additional
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
+        $("#mem1").text("his Big Beautiful Boba eyes")
       });
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
+        $("#mem2").text("his Super Silky fur coat")
       });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+        $("#mem3").text("his Bombastic Booty Behind");
       });
 
 

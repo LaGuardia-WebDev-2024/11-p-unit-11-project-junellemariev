@@ -4,9 +4,41 @@
 html {
   background-color: white;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* ======================== CSS Rule #2 */
 h1 {
   font-family: "Poetsen One", sans-serif;
+}
+
+body {
+  background-image: url(blue\ planets\ edited.jpg);
+  background-repeat: repeat;
+  background-size: auto;
+ }
+
+p {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 30px;
+}
+
+#pootycolor {
+  color: rgb(238,133,77);
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.text-bg {
+  background-color: rgba(250, 235, 215, 0.801);
 }
