@@ -1,12 +1,12 @@
 <!-- Unit 11 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
+[ yes ] $() Select by Element, ID AND Class 
+[ yes ] Use Three Different jQuery Methods 
 [ yes ] Add Five CSS Declarations
-[  ] Include Three Images
+[ yes ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ yes ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -35,16 +35,21 @@ Select ONE Additional
            <button id="mem1-button">Learn more...</button>
       </li>
 
-      <img class="img1" src="eyes.jpg" length="200" width="200">
-      <img class="img1" src="boba pooty.jpg" width="400">
+      <img class="img1" src="eyes.jpg" width="300">
+      <img class="img1" src="boba pooty.jpg" width="600">
+      <img class="img1" src="confused poot.jpg" width="400">
 
       <li>
         <div class="text-bg">
            <h3 id="mem2">Thing #2</h3>
-           <p class="fur">it makes him super soft</p>
+           <p class="fur">it makes you wanna hold him like a jelly bean</p>
         </div>
            <button id="mem2-button">Learn more...</button>
       </li>
+
+      <img class="img2" src="sleeping pooty.jpg" width="300">
+      <img class="img2" src="blanket pooty.jpg" width="300">
+      <img class="img2" src="human pooty.jpg" width="300">
 
       <li>
         <div class="text-bg">
@@ -53,29 +58,53 @@ Select ONE Additional
         </div>
             <button id="mem3-button">Learn more...</button>
       </li>
+
+      <img class="img3" src="pooty on a chair.jpg" width="300">
+      <img class="img3" src="bagel pooty.jpg" width="400">
+      <img class="img3" src="snuggled pooty.jpg" width="300">
+
     </ul>
+
+
+    <button id="end-button">Click here for a surprise...</button>
+    <video id="myVideo" width="400" controls>
+    <source src="pooty burger.mp4" type="video/mp4">
+    </video>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+      $("button").css("color","green");
+
       $(".img1").hide();
       // ======================== Button #1
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
-        $("#mem1").text("his Big Beautiful Boba eyes")
+        $("#mem1").css("color", "navy");
+        $("#mem1").text("his Big Beautiful Boba eyes");
         $(".img1").show(2000);
       });
 
+      $(".img2").hide();
       // ======================== Button #2
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
-        $("#mem2").text("his Super Silky fur coat")
+        $("#mem2").css("color", "green");
+        $("#mem2").text("his Teensy Stature");
+        $(".img2").show(2000);
       });
 
+      $(".img3").hide();
       // ======================== Button #3
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+        $("#mem3").css("color", "darkblue");
         $("#mem3").text("his Bombastic Booty Behind");
+        $(".img3").show(2000);
+      });
+
+
+      $("#myVideo").hide();
+      // ======================== End Button
+      $("#end-button").click(function () {
+        $("#myVideo").show(500);
       });
 
 
